@@ -1,3 +1,8 @@
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> ad5c882b07cbac8819d416068c55e4eea9bc0857
 var pageX = $(document).width();
 var pageY = $(document).height();
 var mouseY=0;
@@ -15,4 +20,8 @@ $(document).mousemove(function( event ) {
 
   //console.log('X: ' + xAxis);
 
+<<<<<<< HEAD
 });
+=======
+});
+>>>>>>> ad5c882b07cbac8819d416068c55e4eea9bc0857

@@ -1,195 +1,305 @@
-$gb: #f2eee8;
-$wh: #ffffff;
-$dark: #009cd7;
-$red: #eb6d6d;
-$blue: #009cd7;
-$break: 400px;
+@import url(https://fonts.googleapis.com/css?family=Ubuntu);
+//variables
+$purple: #28254C;
+$l-purple: #332F63;
+$t-purple: #8C8AA7;
+$pink: #FF5E65;
+$white: #fff;
 
-html,
-body {
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  min-height: 100vh;
-  background-color: $gb;
-  font-family: "Open Sans";
+html, body {
+  background: $purple;
+  font-family: 'Ubuntu';
+}
+* {
+  box-sizing: border-box;
 }
 
-*,
-*:before,
-*:after {
-  box-sizing: content-box;
-  transform: translate3d(0, 0, 0);
-}
+.box {
+  width: 350px;
+  height: 100%;
+  max-height: 600px;
+  min-height: 450px;
+  background: $l-purple;
+  border-radius: 20px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  padding: 30px 50px;
+  
+  .box__ghost {
+    padding: 15px 25px 25px;
+    position: absolute;
+    left: 50%;
+    top: 30%;
+    transform: translate(-50%, -30%);
 
-.face {
-  width: 300px;
-  height: 300px;
-  border: 4px solid $dark;
-  border-radius: 10px;
-  background-color: $wh;
-  margin: 0 auto;
-  margin-top: 100px;
-
-  @media screen and (max-width: $break) {
-    margin-top: 40px;
-    transform: scale(0.8);
-  }
-
-  .band {
-    width: 350px;
-    height: 27px;
-    border: 4px solid $dark;
-    border-radius: 5px;
-    margin-left: -25px;
-    margin-top: 50px;
-
-    .red {
-      height: calc(100% / 3);
-      width: 100%;
-      background-color: $red;
+    .symbol{
+      &:nth-child(1) {
+        opacity: .2;
+        animation: shine 4s ease-in-out 3s infinite;
+        
+        &:before, &:after {
+          content: '';
+          width: 12px;
+          height: 4px;
+          background: $white;
+          position: absolute;
+          border-radius: 5px;
+          bottom: 65px;
+          left: 0;
+        }
+        &:before {
+          transform: rotate(45deg);
+        }
+        &:after {
+          transform: rotate(-45deg);
+        }
+      }
+      &:nth-child(2) {
+        position: absolute;
+        left: -5px;
+        top: 30px;
+        height: 18px;
+        width: 18px;
+        border: 4px solid;
+        border-radius: 50%;
+        border-color: $white;
+        opacity: .2;
+        animation: shine 4s ease-in-out 1.3s infinite;
+      }
+      &:nth-child(3) {
+        opacity: .2;
+        animation: shine 3s ease-in-out .5s infinite;
+        
+        &:before, &:after {
+          content: '';
+          width: 12px;
+          height: 4px;
+          background: $white;
+          position: absolute;
+          border-radius: 5px;
+          top: 5px;
+          left: 40px;
+        }
+        &:before {
+          transform: rotate(90deg);
+        }
+        &:after {
+          transform: rotate(180deg);
+        }
+      }
+      &:nth-child(4) {
+        opacity: .2;
+        animation: shine 6s ease-in-out 1.6s infinite;
+        
+        &:before, &:after {
+          content: '';
+          width: 15px;
+          height: 4px;
+          background: $white;
+          position: absolute;
+          border-radius: 5px;
+          top: 10px;
+          right: 30px;
+        }
+        &:before {
+          transform: rotate(45deg);
+        }
+        &:after {
+          transform: rotate(-45deg);
+        }
+      }
+      &:nth-child(5) {
+        position: absolute;
+        right: 5px;
+        top: 40px;
+        height: 12px;
+        width: 12px;
+        border: 3px solid;
+        border-radius: 50%;
+        border-color: $white;
+        opacity: .2;
+        animation: shine 1.7s ease-in-out 7s infinite;
+      }
+      &:nth-child(6) {
+        opacity: .2;
+        animation: shine 2s ease-in-out 6s infinite;
+        
+        &:before, &:after {
+          content: '';
+          width: 15px;
+          height: 4px;
+          background: $white;
+          position: absolute;
+          border-radius: 5px;
+          bottom: 65px;
+          right: -5px;
+        }
+        &:before {
+          transform: rotate(90deg);
+        }
+        &:after {
+          transform: rotate(180deg);
+        }
+      }
     }
 
-    .white {
-      height: calc(100% / 3);
-      width: 100%;
-      background-color: $wh;
+    .box__ghost-container {
+      background: $white;
+      width: 100px;
+      height: 100px;
+      border-radius: 100px 100px 0 0;
+      position: relative;
+      margin: 0 auto;
+      animation: upndown 3s ease-in-out infinite;
+
+      .box__ghost-eyes {
+        position: absolute;
+        left: 50%;
+        top: 45%;
+        //transform: translate(-50%, -45%); 
+        height: 12px;
+        width: 70px;
+        
+        .box__eye-left {
+          width: 12px;
+          height: 12px;
+          background: $l-purple;
+          border-radius: 50%;
+          margin: 0 10px;
+          position: absolute;
+          left: 0;
+        }
+        .box__eye-right {
+          width: 12px;
+          height: 12px;
+          background: $l-purple;
+          border-radius: 50%;   
+          margin: 0 10px;
+          position: absolute;
+          right: 0;
+        }
+      }
+
+      .box__ghost-bottom {
+        display:flex;
+        position: absolute;
+        top:100%;
+        left:0;
+        right:0;
+
+        div {
+          flex-grow:1;
+          position: relative;
+          top:-10px;
+          height:20px;
+          border-radius:100%;
+          background-color: $white;
+
+          &:nth-child(2n) {
+            top: -12px;
+            margin: 0 -0px;
+            border-top: 15px solid $l-purple;
+            background: transparent;
+          }
+        }
+      }
     }
-
-    .blue {
-      height: calc(100% / 3);
-      width: 100%;
-      background-color: $blue;
-    }
-
-    &:before {
-      content: "";
-      display: inline-block;
-      height: 27px;
-      width: 30px;
-      background-color: rgba($wh, 0.3);
-      position: absolute;
-      z-index: 999;
-    }
-
-    &:after {
-      content: "";
-      display: inline-block;
-      height: 27px;
-      width: 30px;
-      background-color: rgba($dark, 0.3);
-      position: absolute;
-      z-index: 999;
-      right: 0;
-      margin-top: -27px;
-    }
-  }
-
-  .eyes {
-    width: 128px;
-    margin: 0 auto;
-    margin-top: 40px;
-
-    &:before {
-      content: "";
-      display: inline-block;
-      width: 30px;
-      height: 15px;
-      border: 7px solid $dark;
-      margin-right: 20px;
-      border-top-left-radius: 22px;
-      border-top-right-radius: 22px;
-      border-bottom: 0;
-    }
-
-    &:after {
-      content: "";
-      display: inline-block;
-      width: 30px;
-      height: 15px;
-      border: 7px solid $dark;
-      margin-left: 20px;
-      border-top-left-radius: 22px;
-      border-top-right-radius: 22px;
-      border-bottom: 0;
-    }
-  }
-
-  .dimples {
-    width: 180px;
-    margin: 0 auto;
-    margin-top: 15px;
-
-    &:before {
-      content: "";
-      display: inline-block;
-      width: 10px;
-      height: 10px;
-      margin-right: 80px;
+      
+    .box__ghost-shadow {
+      height: 20px;
+      box-shadow: 0 50px 15px 5px #3B3769;
       border-radius: 50%;
-      background-color: rgba($red, 0.4);
-    }
-
-    &:after {
-      content: "";
-      display: inline-block;
-      width: 10px;
-      height: 10px;
-      margin-left: 80px;
-      border-radius: 50%;
-      background-color: rgba($red, 0.4);
+      margin: 0 auto;
+      animation: smallnbig 3s ease-in-out infinite;
     }
   }
+  
+  .box__description {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    
+    .box__description-container {
+      color: $white;
+      text-align: center;
+      width: 200px;
+      font-size: 16px;
+      margin: 0 auto;
+    
+      .box__description-title {
+        font-size: 24px;
+        letter-spacing: .5px;
+      }
 
-  .mouth {
-    width: 40px;
-    height: 5px;
-    border-radius: 5px;
-    background-color: $dark;
-    margin: 0 auto;
-    margin-top: 25px;
+      .box__description-text {
+        color: $t-purple;
+        line-height: 20px;
+        margin-top: 20px;
+      }
+    }
+    
+    .box__button {
+      display: block;
+      position: relative;
+      background: $pink;
+      border: 1px solid transparent;
+      border-radius: 50px;
+      height: 50px;
+      text-align: center;
+      text-decoration: none;
+      color: $white;
+      line-height: 50px;
+      font-size: 18px;
+      padding: 0 70px;
+      white-space: nowrap;
+      margin-top: 25px;
+      transition: background .5s ease;
+      overflow: hidden;
+      -webkit-mask-image: -webkit-radial-gradient(white, black);
+      
+      &:before {
+        content: '';
+        position: absolute;
+        width: 20px;
+        height: 100px;
+        background: $white;
+        bottom: -25px;
+        left: 0;
+        border: 2px solid $white;
+        transform: translateX(-50px) rotate(45deg);
+        transition: transform .5s ease;
+      }
+      
+      &:hover {
+        background: transparent;
+        border-color: $white;
+        
+        &:before {
+          transform: translateX(250px) rotate(45deg);
+        }
+      }
+    }
   }
 }
 
-h1 {
-  font-weight: 800;
-  color: $dark;
-  text-align: center;
-  font-size: 2.5em;
-  padding-top: 20px;
-
-  @media screen and (max-width: $break) {
-    padding-left: 20px;
-    padding-right: 20px;
-    font-size: 2em;
-  }
+//keyframes
+@keyframes upndown {
+  0% {transform: translateY(5px);}
+  50% {transform: translateY(15px);}
+  100% {transform: translateY(5px);}
+}
+@keyframes smallnbig {
+  0% {width: 90px;}
+  50% {width: 100px;}
+  100% {width: 90px;}
+}
+@keyframes shine {
+  0% {opacity: .2;}
+  25% {opacity: .1;}
+  50% {opacity: .2;}
+  100% {opacity: .2;}
 }
 
-.btn {
-  font-family: "Open Sans";
-  font-weight: 400;
-  padding: 20px;
-  background-color: rgba($blue, 1);
-  color: white;
-  width: 320px;
-  margin: 0 auto;
-  text-align: center;
-  font-size: 1.2em;
-  border-radius: 5px;
-  cursor: pointer;
-  margin-top: 80px;
-  margin-bottom: 50px;
-  transition: all 0.2s linear;
-
-  @media screen and (max-width: $break) {
-    margin: 0 auto;
-    margin-top: 60px;
-    margin-bottom: 50px;
-    width: 200px;
-  }
-
-  &:hover {
-    background-color: rgba($blue, 0.8);
-    transition: all 0.2s linear;
-  }
-}

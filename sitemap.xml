@@ -1,66 +1,52 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<urlset
-      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
-            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
-
-
 <url>
   <loc>https://napchaivietthai.com/</loc>
   <lastmod>2021-07-06T02:20:11+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
-  <loc>https://napchaivietthai.com/index.html</loc>
-  <lastmod>2021-07-06T02:20:11+00:00</lastmod>
-  <priority>0.80</priority>
+  <loc>https://napchaivietthai.com/gioi-thieu</loc>
+  <lastmod>2021-07-06T02:20:10+00:00</lastmod>
+  <priority>0.90</priority>
 </url>
 <url>
-  <loc>https://napchaivietthai.com/gioi-thieu.html</loc>
+  <loc>https://napchaivietthai.com/nap-nhom</loc>
+  <lastmod>2021-07-06T02:20:11+00:00</lastmod>
+  <priority>0.90</priority>
+</url>
+<url>
+  <loc>https://napchaivietthai.com/nap-bi-nhua</loc>
+  <lastmod>2021-07-06T02:20:11+00:00</lastmod>
+  <priority>0.90</priority>
+</url>
+<url>
+  <loc>https://napchaivietthai.com/nap-thu-y</loc>
+  <lastmod>2021-07-06T02:20:11+00:00</lastmod>
+  <priority>0.90</priority>
+</url>
+<url>
+  <loc>https://napchaivietthai.com/nap-vien-chan</loc>
+  <lastmod>2021-07-06T02:20:11+00:00</lastmod>
+  <priority>0.90</priority>
+</url>
+<url>
+  <loc>https://napchaivietthai.com/mang-seal</loc>
+  <lastmod>2021-07-06T02:20:11+00:00</lastmod>
+  <priority>0.90</priority>
+</url>
+<url>
+  <loc>https://napchaivietthai.com/lien-he</loc>
+  <lastmod>2021-07-06T02:20:11+00:00</lastmod>
+  <priority>0.90</priority>
+</url>
+<url>
+  <loc>https://napchaivietthai.com/chung-chi-quacert</loc>
   <lastmod>2021-07-06T02:20:10+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://napchaivietthai.com/nap-nhom.html</loc>
+  <loc>https://napchaivietthai.com/pe-bvtv-in-en</loc>
   <lastmod>2021-07-06T02:20:11+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://napchaivietthai.com/nap-bi-nhua.html</loc>
-  <lastmod>2021-07-06T02:20:11+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://napchaivietthai.com/nap-thu-y.html</loc>
-  <lastmod>2021-07-06T02:20:11+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://napchaivietthai.com/nap-vien-chan.html</loc>
-  <lastmod>2021-07-06T02:20:11+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://napchaivietthai.com/mang-seal.html</loc>
-  <lastmod>2021-07-06T02:20:11+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://napchaivietthai.com/lien-he.html</loc>
-  <lastmod>2021-07-06T02:20:11+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://napchaivietthai.com/chung-chi-quacert.html</loc>
-  <lastmod>2021-07-06T02:20:10+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://napchaivietthai.com/pe-bvtv-in-en.html</loc>
-  <lastmod>2021-07-06T02:20:11+00:00</lastmod>
-  <priority>0.64</priority>
+  <priority>0.7</priority>
 </url>
 
 

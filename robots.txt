@@ -1,0 +1,21 @@
+User-agent: *
+
+Disallow: /nap-vien-chan.html/
+
+Disallow: /404.html/
+
+Disallow: /nap-bi-nhua.html/
+
+Disallow: /lien-he.html/
+
+Disallow: /mang-seal.html/
+
+Disallow: /nap-nhom.html/
+
+Disallow: /nap-thu-y.html/
+
+Disallow: /pe-bvtv-in-en.html/
+
+Disallow: /chung-chi-quacert.html/
+
+Disallow: /gioi-thieu.html/
